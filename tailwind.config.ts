@@ -9,9 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "shorten-desktop": "url('/images/bg-shorten-desktop.svg')",
+        "shorten-mobile": "url('/images/bg-shorten-mobile.svg')",
+        "boost-desktop": "url('/images/bg-boost-desktop.svg')",
+        "boost-mobile": "url('/images/bg-boost-mobile.svg')",
+      },
+      colors: {
+        cyan: "hsl(180, 66%, 49%)",
+        gray: "hsl(0, 0%, 75%)",
+        "light-violet": "hsl(230, 25%, 95%)",
+        "dark-violet": "hsl(257, 27%, 26%)",
+        "secondary-red": "hsl(0, 87%, 67%)",
+        "grayish-violet": "hsl(257, 7%, 63%)",
+        "very-dark-blue": "hsl(255, 11%, 22%)",
+        "very-dark-violet": "hsl(260, 8%, 14%)",
+      },
+      fontFamily: {
+        poppins: "var(--font-poppins)",
       },
     },
   },
