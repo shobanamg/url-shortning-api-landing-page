@@ -1,10 +1,12 @@
+import Features from '@/components/sections/Features';
 import Hero from '@/components/sections/Hero';
 
 const Home = () => {
   return (
-    <div>
+    <main className="overflow-hidden text-center">
       <Hero />
-    </div>
+      <Features />
+    </main>
   );
 };
 
