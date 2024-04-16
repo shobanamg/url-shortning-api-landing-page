@@ -28,7 +28,7 @@ const Button = ({
       className={cn(
         'text-xl font-bold text-white transition',
         className,
-        bgColor || 'bg-cyan hover:bg-teal-400'
+        bgColor || 'bg-cyan  hover:bg-opacity-30'
       )}
     >
       {children}
