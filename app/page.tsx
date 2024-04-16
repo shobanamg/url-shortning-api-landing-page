@@ -1,7 +1,11 @@
-export default function Home() {
+import Hero from '@/components/sections/Hero';
+
+const Home = () => {
   return (
-    <main>
-      Url Shortening
-    </main>
+    <div>
+      <Hero />
+    </div>
   );
-}
+};
+
+export default Home;
