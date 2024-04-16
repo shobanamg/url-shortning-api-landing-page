@@ -1,6 +1,7 @@
-import { features } from "@/constants";
-import { cn } from "@/lib/cn";
-import Image from "next/image";
+import Image from 'next/image';
+
+import { features } from '@/constants';
+import { cn } from '@/lib/cn';
 
 const Features = () => {
   return (
@@ -15,15 +16,15 @@ const Features = () => {
         </p>
       </div>
       <div className="relative mx-auto grid max-w-[89rem] gap-[5.9rem] lg:grid-cols-3 lg:gap-8 xl:px-[8.8rem]">
-        <div className="absolute left-1/2 h-[50rem] w-2 -translate-x-1/2 bg-cyan lg:top-[57.5%] lg:h-2 lg:w-[50rem]"></div>
+        <div className="absolute left-1/2 h-[50rem] w-2 -translate-x-1/2 bg-cyan lg:top-[57.5%] lg:h-2 lg:w-[50rem]" />
 
         {features.map((feature, index) => (
           <div
             key={feature.title}
             className={cn(
               `relative z-20 mx-auto max-w-[30rem] space-y-8 rounded-lg bg-white px-8 pb-9 lg:pb-[2.35rem] lg:pl-[1.6rem] lg:pr-[1.7rem] lg:text-left`,
-              index === 1 && "lg:top-[2.65rem] lg:pt-0.5 lg:leading-9",
-              index === 2 && "lg:top-[5.35rem] lg:pt-1 lg:leading-8",
+              index === 1 && 'lg:top-[2.65rem] lg:pt-0.5 lg:leading-9',
+              index === 2 && 'lg:top-[5.35rem] lg:pt-1 lg:leading-8'
             )}
           >
             <div className="mx-auto -mt-11 flex w-[5.5rem] items-center rounded-full bg-dark-violet p-6 lg:ml-1.5">

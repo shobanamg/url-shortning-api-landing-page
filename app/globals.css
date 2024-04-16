@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body,
-:root {
-    height: 100%;
+body {
+    font-size: 1.125rem;
+}
+h1,
+h2,
+h3 {
+    @apply font-bold text-very-dark-violet;
+}
+p {
+    @apply text-grayish-violet;
 }
 
-
+@layer components {
+    .custom-filter {
+        filter: invert(77%) sepia(86%) saturate(527%) hue-rotate(133deg)
+        brightness(200%) contrast(150%);
+    }
+}
