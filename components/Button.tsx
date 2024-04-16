@@ -8,6 +8,7 @@ type ButtonProps = {
   bgColor?: string;
   ariaLabel?: string;
   onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
   ariaExpanded?: boolean; // Add ariaExpanded prop
 };
 
@@ -17,11 +18,13 @@ const Button = ({
   bgColor,
   ariaLabel,
   onClick,
+  type,
   ariaExpanded,
 }: ButtonProps) => {
   return (
     <button
-      type="button"
+      // eslint-disable-next-line react/button-has-type
+      type={type || 'button'}
       onClick={onClick}
       aria-label={ariaLabel}
       aria-expanded={ariaExpanded} // Add aria-expanded attribute
