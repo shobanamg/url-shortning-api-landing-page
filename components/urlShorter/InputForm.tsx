@@ -34,6 +34,7 @@ const InputForm = ({ setUrlList }: InputFormProps) => {
 
     try {
       const shortenedUrlResult = await shortenUrl(inputUrl);
+      console.log(shortenedUrlResult);
 
       updateUrlList({
         long: inputUrl,

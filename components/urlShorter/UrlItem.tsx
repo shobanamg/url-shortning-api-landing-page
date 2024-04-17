@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 
 import Button from '@/components/Button';
 
@@ -40,12 +39,9 @@ const UrlItem = ({ url, urlList, setUrlList }: UrlItemProps) => {
         {url.long}
       </p>
       <div className="flex grow flex-col items-start justify-between gap-3 p-3 md:flex-row md:items-center lg:gap-6 lg:px-6">
-        <Link
-          href={`${url.short}`}
-          className="text-cyan transition hover:text-very-dark-violet hover:underline"
-        >
-          {`${url.short}`}
-        </Link>
+        <div className="text-cyan transition hover:text-very-dark-violet hover:underline">
+          1 {`${url.short}`}
+        </div>
         <Button
           className="flex w-full justify-center rounded-md px-[1.6rem] py-2 text-lg md:w-[6.5rem]"
           bgColor={url.copied ? 'bg-dark-violet' : ''}
